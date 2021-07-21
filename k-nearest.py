@@ -17,6 +17,7 @@ def Sort(sub_li):
 def getDistance(p1,p2,p):
 
     diff = p1-p2
+    diff = abs(diff)
     if p == np.inf:
         return np.max(diff)    
     power = np.power(diff,p)
